@@ -8,8 +8,8 @@ function App() {
 		<div className="App">
 			<header className="App-header"></header>
 			<Storybook />
-      {/* <StoryResume /> */}
-      {/* <StoryScroll /> */}
+			{/* <StoryResume /> */}
+			{/* <StoryScroll /> */}
 		</div>
 	);
 }

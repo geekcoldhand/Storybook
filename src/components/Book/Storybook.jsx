@@ -55,43 +55,30 @@ const Storybook = () => {
 								</div>
 
 								<div className="name-container">
-
-								<h1 className="hero-title pinstripe">
-									Hi, my name is <span className="hero-name ">Horatious</span>
-								</h1>
+									<h1 className="hero-title pinstripe">
+										Hi, my name is <span className="hero-name ">Horatious</span>
+									</h1>
 								</div>
 							</div>
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer
-						offset={0}
-						speed={1.5}
-						factor={0.5}
-						horizontal={true}
-					>
+					<ParallaxLayer offset={0} speed={1.5} factor={0.5} horizontal={true}>
 						<img
 							className="cloud"
 							src="/drawnClouds.png"
 							alt=""
 							style={{
-						
 								transform: "translateY(68vh) translateX(10vw)",
 							}}
 						/>
 					</ParallaxLayer>
-					<ParallaxLayer
-						offset={0}
-						speed={-1.5}
-						factor={0.5}
-						horizontal={true}
-					>
+					<ParallaxLayer offset={0} speed={-1.5} factor={0.5} horizontal={true}>
 						<img
 							className="cloud"
 							src="/drawnClouds.png"
 							alt=""
 							style={{
-					
 								transform: "translateY(60vh) translateX(60vw)",
 							}}
 						/>
@@ -107,25 +94,17 @@ const Storybook = () => {
 							src="/drawnClouds.png"
 							alt=""
 							style={{
-								
-								 transform: "translateY(35vh) translateX(40%)",
-								
+								transform: "translateY(35vh) translateX(40%)",
 							}}
 						/>
 					</ParallaxLayer>
-					<ParallaxLayer
-						offset={-2}
-						speed={1.5}
-						factor={-1}
-						horizontal={true}
-					>
+					<ParallaxLayer offset={-2} speed={1.5} factor={-1} horizontal={true}>
 						<img
 							src="/cloud1.png"
 							alt=""
 							style={{
 								width: "250px",
 								height: "200px",
-								
 							}}
 						/>
 					</ParallaxLayer>
