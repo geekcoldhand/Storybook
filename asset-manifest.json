@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.b354703a.css",
-    "main.js": "/static/js/main.cda80459.js",
-    "static/js/453.5d0411c3.chunk.js": "/static/js/453.5d0411c3.chunk.js",
-    "index.html": "/index.html",
-    "main.b354703a.css.map": "/static/css/main.b354703a.css.map",
-    "main.cda80459.js.map": "/static/js/main.cda80459.js.map",
-    "453.5d0411c3.chunk.js.map": "/static/js/453.5d0411c3.chunk.js.map"
+    "main.css": "/geekcoldhand/Storybook.git/static/css/main.b354703a.css",
+    "main.js": "/geekcoldhand/Storybook.git/static/js/main.1ee3c0fa.js",
+    "static/js/453.5d0411c3.chunk.js": "/geekcoldhand/Storybook.git/static/js/453.5d0411c3.chunk.js",
+    "index.html": "/geekcoldhand/Storybook.git/index.html",
+    "main.b354703a.css.map": "/geekcoldhand/Storybook.git/static/css/main.b354703a.css.map",
+    "main.1ee3c0fa.js.map": "/geekcoldhand/Storybook.git/static/js/main.1ee3c0fa.js.map",
+    "453.5d0411c3.chunk.js.map": "/geekcoldhand/Storybook.git/static/js/453.5d0411c3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b354703a.css",
-    "static/js/main.cda80459.js"
+    "static/js/main.1ee3c0fa.js"
   ]
 }
