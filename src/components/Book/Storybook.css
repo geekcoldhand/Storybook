@@ -1,0 +1,153 @@
+:root {
+	--c1: #b0c4e8;
+	--c2: #7b90b8;
+	--c3: #6476a0;
+	--c4: #3e6194;
+	--c5: #2f5586;
+	--c6: #213f7c;
+	--bg: linear-gradient(180deg, var(--c1), var(--c6));
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: var(--c6);
+}
+body,
+html,
+#root {
+	height: 100%;
+}
+.storybook-root {
+	font-family: system-ui, -apple-system, "Alumni Sans Pinstripe",
+		"Permanent Marker", sans-serif;
+	color: var(--c6);
+	position: relative;
+}
+
+.emoji {
+	width: 6rem;
+	height: 6rem;
+	font-size: 65px;
+	display: block;
+	margin-bottom: 15px;
+	filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+}
+.center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(176, 196, 232, 0.5);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.progress-bar {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, var(--c5) 0%, var(--c2) 50%, var(--c1) 100%);
+  transform-origin: left center;
+  transform: scaleX(0);
+  box-shadow: 0 2px 8px rgba(46, 62, 95, 0.69);
+}
+
+.circle-border {
+	border-radius: 100%;
+	border: 10px rgb(119, 148, 205) solid;
+	border-bottom: 10px rgb(122, 122, 186) solid;
+	border-left: 10px rgb(114, 172, 120) solid;
+	border-right: 10px rgb(103, 179, 167) solid;
+}
+
+.bg-layer {
+	position: fixed;
+	inset: 0;
+	z-index: -2;
+	overflow: hidden;
+	background-color: #f7eddf;
+}
+.bg-image {
+	position: absolute;
+	inset: -10% 0;
+	background-image: url("");
+	background-position: center center;
+	transform-origin: center center;
+	will-change: transform;
+}
+
+.scene {
+	min-height: 100vh;
+	padding: 6rem 1rem;
+}
+.hero-content {
+}
+.hero-scene .hero-content {
+	max-width: 820px;
+	text-align: center;
+}
+.hero-title {
+	font-size: 2.2rem;
+	margin: 0;
+}
+.hero-name {
+	font-size: 2.6rem;
+	display: inline-block;
+}
+.pinstripe {
+	font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+.permanent {
+	font-family: "Permanent Marker", cursive;
+}
+
+.macro {
+	font-size: 4rem;
+}
+.micro {
+	opacity: 0;
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+.card {
+	background: rgba(255, 255, 255, 0.7);
+	padding: 1.2rem;
+	border-radius: 16px;
+	max-width: 72vw;
+}
+
+.footer-scene {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+}
+
+/* mobile first scales */
+@media (min-width: 760px) {
+	.hero-title {
+		font-size: 3.4rem;
+	}
+	.macro {
+		font-size: 6rem;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
