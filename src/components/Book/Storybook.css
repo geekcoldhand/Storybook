@@ -75,6 +75,14 @@ html,
 	border-left: 10px rgb(114, 172, 120) solid;
 	border-right: 10px rgb(103, 179, 167) solid;
 }
+.image-container{
+    width: 100px;
+    height: 100px;
+  shape-outside: circle(50%);
+  float: left;
+    margin-right: 4rem;
+    margin-bottom: 3rem;  }
+  
 .cloud{
 	width: 35vw;
 	height: auto;

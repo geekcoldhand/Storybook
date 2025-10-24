@@ -112,7 +112,16 @@ const Storybook = () => {
 					<ParallaxLayer offset={0.75} speed={0.5} factor={0.5}>
 						<section id="about-me" className="scene about-me center">
 							<h2>About Me</h2>
+
 							<p>
+							<div className="image-container">
+								<img
+									src="/avatar.png"
+									alt=""
+							
+									style={{ width: "150px", height: "150px", borderRadius: "50%" , shapeOutside: "circle(50%), float: left"}}
+								/>
+							</div>
 								I'm a Senior Software Engineer with over seven years of
 								experience delivering scalable, cloud-native applications across
 								both front-end and back-end systems. I focus on full-stack

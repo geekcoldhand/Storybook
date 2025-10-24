@@ -1,5 +1,6 @@
 {
 	"name": "storybook",
+  "homepage": "https://Storybook.github.io/Storybook",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
