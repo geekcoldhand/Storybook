@@ -49,7 +49,7 @@ export default function StoryResume() {
 			>
 				<div className="image-container">
 					<img
-						src="/image.png"
+						src={`${process.env.PUBLIC_URL}/avatar.png`}
 						alt=""
 						style={{
 							width: "100px",

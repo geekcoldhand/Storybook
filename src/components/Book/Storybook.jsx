@@ -51,7 +51,11 @@ const Storybook = () => {
 						<section className="scene hero-scene center">
 							<div className="hero-content center">
 								<div className="emoji circle-border">
-									<img src="/avatar.png" alt="" className="hero-avatar " />
+									<img
+										src={`${process.env.PUBLIC_URL}/avatar.png`}
+										alt=""
+										className="hero-avatar "
+									/>
 								</div>
 
 								<div className="name-container">
@@ -66,7 +70,7 @@ const Storybook = () => {
 					<ParallaxLayer offset={0} speed={1.5} factor={0.5} horizontal={true}>
 						<img
 							className="cloud"
-							src="/drawnClouds.png"
+								src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
 							alt=""
 							style={{
 								transform: "translateY(68vh) translateX(10vw)",
@@ -76,7 +80,7 @@ const Storybook = () => {
 					<ParallaxLayer offset={0} speed={-1.5} factor={0.5} horizontal={true}>
 						<img
 							className="cloud"
-							src="/drawnClouds.png"
+								src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
 							alt=""
 							style={{
 								transform: "translateY(60vh) translateX(60vw)",
@@ -91,7 +95,7 @@ const Storybook = () => {
 					>
 						<img
 							className="cloud"
-							src="/drawnClouds.png"
+								src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
 							alt=""
 							style={{
 								transform: "translateY(35vh) translateX(40%)",
@@ -100,7 +104,7 @@ const Storybook = () => {
 					</ParallaxLayer>
 					<ParallaxLayer offset={-2} speed={1.5} factor={-1} horizontal={true}>
 						<img
-							src="/cloud1.png"
+								src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
 							alt=""
 							style={{
 								width: "250px",
@@ -116,7 +120,7 @@ const Storybook = () => {
 							<p>
 								<div className="left-container">
 									<img
-										src="/avatar.png"
+										src={`${process.env.PUBLIC_URL}/avatar.png`}
 										alt=""
 										style={{
 											width: "150px",
@@ -158,7 +162,7 @@ const Storybook = () => {
 								{" "}
 								<div className="right-container">
 									<img
-										src="/avatar.png"
+										src={`${process.env.PUBLIC_URL}/avatar.png`}
 										alt=""
 										style={{
 											width: "150px",
