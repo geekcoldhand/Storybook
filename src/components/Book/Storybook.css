@@ -25,7 +25,7 @@ html,
 	color: var(--c6);
 	position: relative;
 }
-.hero-avatar{
+.hero-avatar {
 	width: 6rem;
 	height: auto;
 	border-radius: 30%;
@@ -49,23 +49,28 @@ html,
 	align-items: center;
 }
 .progress-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: rgba(176, 196, 232, 0.5);
-  z-index: 1000;
-  backdrop-filter: blur(10px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: rgba(176, 196, 232, 0.5);
+	z-index: 1000;
+	backdrop-filter: blur(10px);
 }
 
 .progress-bar {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(90deg, var(--c5) 0%, var(--c2) 50%, var(--c1) 100%);
-  transform-origin: left center;
-  transform: scaleX(0);
-  box-shadow: 0 2px 8px rgba(46, 62, 95, 0.69);
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(
+		90deg,
+		var(--c5) 0%,
+		var(--c2) 50%,
+		var(--c1) 100%
+	);
+	transform-origin: left center;
+	transform: scaleX(0);
+	box-shadow: 0 2px 8px rgba(46, 62, 95, 0.69);
 }
 
 .circle-border {
@@ -75,15 +80,24 @@ html,
 	border-left: 10px rgb(114, 172, 120) solid;
 	border-right: 10px rgb(103, 179, 167) solid;
 }
-.image-container{
-    width: 100px;
-    height: 100px;
-  shape-outside: circle(50%);
-  float: left;
-    margin-right: 4rem;
-    margin-bottom: 3rem;  }
-  
-.cloud{
+.left-container {
+	width: 100px;
+	height: 100px;
+	shape-outside: circle(50%);
+	float: left;
+	margin-right: 4rem;
+	margin-bottom: 3rem;
+}
+.right-container {
+	width: 100px;
+	height: 100px;
+	shape-outside: circle(50%);
+	float: right;
+	margin-right: 4rem;
+	margin-bottom: 3rem;
+}
+
+.cloud {
 	width: 35vw;
 	height: auto;
 	max-width: 400px;

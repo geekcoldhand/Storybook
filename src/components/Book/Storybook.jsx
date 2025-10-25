@@ -114,14 +114,18 @@ const Storybook = () => {
 							<h2>About Me</h2>
 
 							<p>
-							<div className="image-container">
-								<img
-									src="/avatar.png"
-									alt=""
-							
-									style={{ width: "150px", height: "150px", borderRadius: "50%" , shapeOutside: "circle(50%), float: left"}}
-								/>
-							</div>
+								<div className="left-container">
+									<img
+										src="/avatar.png"
+										alt=""
+										style={{
+											width: "150px",
+											height: "150px",
+											borderRadius: "50%",
+											shapeOutside: "circle(50%), float: left",
+										}}
+									/>
+								</div>
 								I'm a Senior Software Engineer with over seven years of
 								experience delivering scalable, cloud-native applications across
 								both front-end and back-end systems. I focus on full-stack
@@ -151,6 +155,19 @@ const Storybook = () => {
 						<section id="early-life" className="scene center">
 							<h2>Early Life</h2>
 							<p>
+								{" "}
+								<div className="right-container">
+									<img
+										src="/avatar.png"
+										alt=""
+										style={{
+											width: "150px",
+											height: "150px",
+											borderRadius: "50%",
+											shapeOutside: "circle(50%)",
+										}}
+									/>
+								</div>
 								I discovered a love for embedded programming languages (Java and
 								C++) in high school from my dad. That excitement led to me
 								majoring in Computer Science, growing my focus toward web
@@ -165,7 +182,7 @@ const Storybook = () => {
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={3} speed={0.3} factor={1}>
+					<ParallaxLayer offset={2} speed={0.3} factor={1}>
 						<section className="scene education-scene center">
 							<h2 className="pinstripe">Education</h2>
 							<div className="book-emoji macro">📚</div>
@@ -188,7 +205,7 @@ const Storybook = () => {
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={4} speed={0.3} factor={1}>
+					<ParallaxLayer offset={3} speed={0.3} factor={1}>
 						<section className="scene career-scene center">
 							<div className="briefcase-emoji macro">💼</div>
 							<div className="career-panel card">
@@ -215,7 +232,7 @@ const Storybook = () => {
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={5} speed={0.3} factor={1}>
+					<ParallaxLayer offset={4} speed={0.3} factor={1}>
 						<section className="scene today-scene">
 							<div className="today-panel card">
 								<h2>What I'm Up To</h2>
