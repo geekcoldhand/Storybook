@@ -20,8 +20,7 @@ html,
 	height: 100%;
 }
 .storybook-root {
-	font-family: system-ui, -apple-system, "Alumni Sans Pinstripe",
-		"Permanent Marker", sans-serif;
+ font-family: "Helvetica", sans-serif;
 	color: var(--c6);
 	position: relative;
 }
@@ -47,6 +46,7 @@ html,
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 .progress-container {
 	position: fixed;
@@ -137,13 +137,16 @@ html,
 	display: inline-block;
 }
 .pinstripe {
-	font-family: "Alumni Sans Pinstripe", sans-serif;
+	font-family: "Verdana", sans-serif;
+	font-weight: 300;
 }
 .permanent {
-	font-family: "Permanent Marker", cursive;
+	font-family: "Monaco", sans-serif;
+	font-weight: 400;
 }
+
 .xxxl {
-	font-size: 8rem;
+	font-size: 2.5rem;
 }
 
 .macro {

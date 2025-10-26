@@ -59,7 +59,7 @@ const Storybook = () => {
 								</div>
 
 								<div className="name-container">
-									<h1 className="hero-title pinstripe">
+									<h1 className="hero-title permanent">
 										Hi, my name is <span className="hero-name ">Horatious</span>
 									</h1>
 								</div>
@@ -98,16 +98,16 @@ const Storybook = () => {
 							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
 							alt=""
 							style={{
-								transform: "translateY(35vh) translateX(40%)",
+								transform: "translateY(30vh) translateX(40%)",
 							}}
 						/>
 					</ParallaxLayer>
-					<ParallaxLayer offset={0} speed={-1.5} factor={.5} horizontal={true}>
+					<ParallaxLayer offset={0} speed={-1.5} factor={0.5} horizontal={true}>
 						<img
 							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
 							alt=""
 							style={{
-								transform: "translateY(65vh) translateX(60%) ",
+								transform: "translateY(65vh) translateX(47%) ",
 								height: "10rem",
 							}}
 						/>
@@ -117,16 +117,25 @@ const Storybook = () => {
 							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
 							alt=""
 							style={{
-								
 								height: "10rem",
-								transform: "translateY(21vh) translateX(-5%) rotate(180deg)",
+								transform: "translateY(17vh) translateX(-25%) rotate(180deg)",
+							}}
+						/>
+					</ParallaxLayer>
+								<ParallaxLayer offset={0} speed={1.5} factor={-1} horizontal={true}>
+						<img
+							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+							alt=""
+							style={{
+								height: "7rem",
+								transform: "translateY(77vh) translateX(-15%) rotate(180deg)",
 							}}
 						/>
 					</ParallaxLayer>
 
 					<ParallaxLayer offset={0.8} speed={0.5} factor={0.5}>
 						<section id="about-me" className="scene about-me center">
-							<h2 className="pinstripe">About Me</h2>
+							<h2 className="permanent xxxl">About Me</h2>
 							<p>
 								<div className="left-container">
 									<img
@@ -185,7 +194,7 @@ const Storybook = () => {
 
 					<ParallaxLayer offset={1.2} speed={0.5} factor={0.5}>
 						<section className="scene geography-scene center">
-							<h2 className="pinstripe">Early Life</h2>
+							<h2 className="permanent xxxl">Early Life</h2>
 							<div className="globe-emoji macro">🌎</div>
 
 							<p> im from Alpharetta, Georgia</p>
@@ -228,7 +237,7 @@ const Storybook = () => {
 
 					<ParallaxLayer offset={2.5} speed={0.3} factor={1}>
 						<section className="scene education-scene center">
-							<h2 className="pinstripe">Education</h2>
+							<h2 className="permanent xxxl">Education</h2>
 
 							<div className="education-panel ">
 								<p>
@@ -254,6 +263,21 @@ const Storybook = () => {
 									Full Stack Development certification, Georgia Institute of
 									Technology (MERN stack)
 									<br />
+									<div
+										className="right-container"
+										style={{ marginRight: "1rem" }}
+									>
+										<img
+											src={`${process.env.PUBLIC_URL}/einstein.png`}
+											alt=""
+											style={{
+												width: "150px",
+												height: "150px",
+												borderRadius: "50%",
+												shapeOutside: "circle(50%), float: left",
+											}}
+										/>
+									</div>
 									Studied patterns, logic, and problem decomposition. I love
 									systems that are simple and repeatable. Lorem ipsum dolor sit
 									amet consectetur adipisicing elit. Quaerat repellendus
@@ -268,7 +292,7 @@ const Storybook = () => {
 					<ParallaxLayer offset={3} speed={0.3} factor={1}>
 						<section className="scene career-scene center">
 							<div className="career-panel ">
-								<h2 className="pinstripe">Professional Career</h2>
+								<h2 className="permanent xxxl">Professional Career</h2>
 								<hr />
 								<p>
 									As a Senior Software Engineer at Accenture, I serve as a
@@ -309,9 +333,9 @@ const Storybook = () => {
 					</ParallaxLayer>
 
 					<ParallaxLayer offset={3.85} speed={0.3} factor={1}>
-						<section className="scene today-scene">
+						<section className="scene today-scene center">
 							<div className="today-panel ">
-								<h2 className="pinstripe">Current Projects</h2>
+								<h2 className="permanent xxxl">Current Projects</h2>
 								<hr />
 								<p>
 									I continue to expand my expertise in AWS Cloud Services and
