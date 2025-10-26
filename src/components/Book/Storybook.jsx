@@ -38,7 +38,7 @@ const Storybook = () => {
 				<div className="progress-bar" ref={progressRef}></div>
 			</div>
 
-			<Parallax pages={4.5} ref={parallaxRef}>
+			<Parallax pages={5} ref={parallaxRef}>
 				<div ref={rootRef} className="storybook-root">
 					<div className="bg-layer">
 						<div
@@ -102,20 +102,31 @@ const Storybook = () => {
 							}}
 						/>
 					</ParallaxLayer>
-					<ParallaxLayer offset={-2} speed={1.5} factor={-1} horizontal={true}>
+					<ParallaxLayer offset={0} speed={-1.5} factor={.5} horizontal={true}>
 						<img
 							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
 							alt=""
 							style={{
-								width: "250px",
-								height: "200px",
+								transform: "translateY(65vh) translateX(60%) ",
+								height: "10rem",
+							}}
+						/>
+					</ParallaxLayer>
+					<ParallaxLayer offset={0} speed={1.5} factor={-1} horizontal={true}>
+						<img
+							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+							alt=""
+							style={{
+								
+								height: "10rem",
+								transform: "translateY(21vh) translateX(-5%) rotate(180deg)",
 							}}
 						/>
 					</ParallaxLayer>
 
 					<ParallaxLayer offset={0.8} speed={0.5} factor={0.5}>
 						<section id="about-me" className="scene about-me center">
-							<h2>About Me</h2>
+							<h2 className="pinstripe">About Me</h2>
 							<p>
 								<div className="left-container">
 									<img
@@ -174,7 +185,7 @@ const Storybook = () => {
 
 					<ParallaxLayer offset={1.2} speed={0.5} factor={0.5}>
 						<section className="scene geography-scene center">
-							<h2>Early Life</h2>
+							<h2 className="pinstripe">Early Life</h2>
 							<div className="globe-emoji macro">🌎</div>
 
 							<p> im from Alpharetta, Georgia</p>
@@ -257,7 +268,7 @@ const Storybook = () => {
 					<ParallaxLayer offset={3} speed={0.3} factor={1}>
 						<section className="scene career-scene center">
 							<div className="career-panel ">
-								<h2>Professional Career</h2>
+								<h2 className="pinstripe">Professional Career</h2>
 								<hr />
 								<p>
 									As a Senior Software Engineer at Accenture, I serve as a
@@ -300,7 +311,7 @@ const Storybook = () => {
 					<ParallaxLayer offset={3.85} speed={0.3} factor={1}>
 						<section className="scene today-scene">
 							<div className="today-panel ">
-								<h2>Current Projects</h2>
+								<h2 className="pinstripe">Current Projects</h2>
 								<hr />
 								<p>
 									I continue to expand my expertise in AWS Cloud Services and
