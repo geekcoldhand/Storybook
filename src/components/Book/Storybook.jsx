@@ -38,7 +38,7 @@ const Storybook = () => {
 				<div className="progress-bar" ref={progressRef}></div>
 			</div>
 
-			<Parallax pages={5} ref={parallaxRef}>
+			<Parallax pages={4.25} ref={parallaxRef}>
 				<div ref={rootRef} className="storybook-root">
 					<div className="bg-layer">
 						<div
@@ -70,7 +70,7 @@ const Storybook = () => {
 					<ParallaxLayer offset={0} speed={1.5} factor={0.5} horizontal={true}>
 						<img
 							className="cloud"
-								src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
 							alt=""
 							style={{
 								transform: "translateY(68vh) translateX(10vw)",
@@ -80,7 +80,7 @@ const Storybook = () => {
 					<ParallaxLayer offset={0} speed={-1.5} factor={0.5} horizontal={true}>
 						<img
 							className="cloud"
-								src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
 							alt=""
 							style={{
 								transform: "translateY(60vh) translateX(60vw)",
@@ -95,7 +95,7 @@ const Storybook = () => {
 					>
 						<img
 							className="cloud"
-								src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
 							alt=""
 							style={{
 								transform: "translateY(35vh) translateX(40%)",
@@ -104,7 +104,7 @@ const Storybook = () => {
 					</ParallaxLayer>
 					<ParallaxLayer offset={-2} speed={1.5} factor={-1} horizontal={true}>
 						<img
-								src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
 							alt=""
 							style={{
 								width: "250px",
@@ -113,10 +113,9 @@ const Storybook = () => {
 						/>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={0.75} speed={0.5} factor={0.5}>
+					<ParallaxLayer offset={0.8} speed={0.5} factor={0.5}>
 						<section id="about-me" className="scene about-me center">
 							<h2>About Me</h2>
-
 							<p>
 								<div className="left-container">
 									<img
@@ -136,7 +135,7 @@ const Storybook = () => {
 								development, specializing in cloud computing, microservices
 								architecture, and modern DevOps practices.
 							</p>
-							<br></br>
+							<br />
 							<p>
 								I hold a Bachelor of Science in Computer Science from the
 								University of West Georgia and a Full Stack Development
@@ -159,7 +158,6 @@ const Storybook = () => {
 						<section id="early-life" className="scene center">
 							<h2>Early Life</h2>
 							<p>
-								{" "}
 								<div className="right-container">
 									<img
 										src={`${process.env.PUBLIC_URL}/avatar.png`}
@@ -173,10 +171,16 @@ const Storybook = () => {
 									/>
 								</div>
 								I discovered a love for embedded programming languages (Java and
-								C++) in high school from my dad. That excitement led to me
-								majoring in Computer Science, growing my focus toward web
-								development.
+								C++) in high school from my dad.
+								<br />
+								That excitement led to me majoring in Computer Science, growing
+								my focus toward web development. Lorem ipsum dolor sit amet
+								consectetur adipisicing elit. Officia labore nemo sint obcaecati
+								iusto. Optio culpa sunt velit reiciendis eligendi distinctio
+								sint dignissimos aspernatur, natus corrupti, voluptates pariatur
+								voluptatibus debitis?
 							</p>
+							<br />
 							<p>
 								Hours of preparation for hackathons, app competitions, and tech
 								conferences have comforted me in fast-paced learning and
@@ -189,30 +193,34 @@ const Storybook = () => {
 					<ParallaxLayer offset={2} speed={0.3} factor={1}>
 						<section className="scene education-scene center">
 							<h2 className="pinstripe">Education</h2>
-							<div className="book-emoji macro">📚</div>
-							<div className="education-panel card">
-								<ul>
-									<li>
-										Bachelor of Science in Computer Science, University of West
-										Georgia
-									</li>
-									<li>
-										Full Stack Development certification, Georgia Institute of
-										Technology (MERN stack)
-									</li>
-								</ul>
+
+							<div className="education-panel ">
 								<p>
+									Bachelor of Science in Computer Science, University of West
+									Georgia Lorem ipsum dolor sit, amet consectetur adipisicing
+									elit. Possimus, itaque atque. Culpa asperiores similique, at
+									aliquam rem unde assumenda ad vero, corrupti provident
+									consequatur! Ratione quas provident vero odio voluptatibus.
+									<br />
+									<br />
+									Full Stack Development certification, Georgia Institute of
+									Technology (MERN stack)
+									<br />
 									Studied patterns, logic, and problem decomposition. I love
-									systems that are simple and repeatable.
+									systems that are simple and repeatable. Lorem ipsum dolor sit
+									amet consectetur adipisicing elit. Quaerat repellendus
+									deleniti tempore quasi ea at enim doloremque vel quisquam
+									temporibus nihil doloribus magni totam ex sunt blanditiis,
+									architecto vero sed!
 								</p>
 							</div>
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={3} speed={0.3} factor={1}>
+					<ParallaxLayer offset={2.75} speed={0.3} factor={1}>
 						<section className="scene career-scene center">
 							<div className="briefcase-emoji macro">💼</div>
-							<div className="career-panel card">
+							<div className="career-panel ">
 								<h2>Professional Career</h2>
 								<p>
 									As a Senior Software Engineer at Accenture, I serve as a
@@ -221,11 +229,13 @@ const Storybook = () => {
 									that enhance performance, maintainability, and cost
 									efficiency.
 								</p>
+								<br />
 								<p>
 									I consistently implement automated CI/CD pipelines, develop
 									secure and efficient RESTful APIs, and provision
 									infrastructure using Infrastructure-as-Code tools.
 								</p>
+								<br />
 								<p>
 									I'm also passionate about mentoring and teaching, leading a
 									youth mentorship program at Nexus Church in Atlanta, where I
@@ -236,10 +246,11 @@ const Storybook = () => {
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={4} speed={0.3} factor={1}>
+					<ParallaxLayer offset={3.45} speed={0.3} factor={1}>
 						<section className="scene today-scene">
-							<div className="today-panel card">
-								<h2>What I'm Up To</h2>
+							<div className="today-panel ">
+								<h2>Current Projects</h2>
+								<hr />
 								<p>
 									I continue to expand my expertise in AWS Cloud Services and
 									explore emerging trends in software development and

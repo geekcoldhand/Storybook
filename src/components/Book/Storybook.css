@@ -76,9 +76,7 @@ html,
 .circle-border {
 	border-radius: 100%;
 	border: 10px rgb(119, 148, 205) solid;
-	border-bottom: 10px rgb(122, 122, 186) solid;
-	border-left: 10px rgb(114, 172, 120) solid;
-	border-right: 10px rgb(103, 179, 167) solid;
+	
 }
 .left-container {
 	width: 100px;
