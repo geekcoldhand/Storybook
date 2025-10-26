@@ -181,7 +181,7 @@ const Storybook = () => {
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={1.8} speed={0.3} factor={0.5}>
+					<ParallaxLayer offset={1.8} speed={0.3} factor={1}>
 						<section id="early-life" className="scene center">
 							<p>
 								<div className="right-container">
@@ -215,7 +215,7 @@ const Storybook = () => {
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={2} speed={0.3} factor={1}>
+					<ParallaxLayer offset={2.5} speed={0.3} factor={1}>
 						<section className="scene education-scene center">
 							<h2 className="pinstripe">Education</h2>
 
@@ -254,7 +254,7 @@ const Storybook = () => {
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={2.75} speed={0.3} factor={1}>
+					<ParallaxLayer offset={3} speed={0.3} factor={1}>
 						<section className="scene career-scene center">
 							<div className="career-panel ">
 								<h2>Professional Career</h2>
@@ -297,7 +297,7 @@ const Storybook = () => {
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={3.45} speed={0.3} factor={1}>
+					<ParallaxLayer offset={3.85} speed={0.3} factor={1}>
 						<section className="scene today-scene">
 							<div className="today-panel ">
 								<h2>Current Projects</h2>

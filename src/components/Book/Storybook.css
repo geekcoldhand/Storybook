@@ -141,6 +141,9 @@ html,
 .permanent {
 	font-family: "Permanent Marker", cursive;
 }
+.xxxl {
+	font-size: 8rem;
+}
 
 .macro {
 	font-size: 4rem;
