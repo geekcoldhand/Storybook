@@ -38,7 +38,7 @@ const Storybook = () => {
 				<div className="progress-bar" ref={progressRef}></div>
 			</div>
 
-			<Parallax pages={4.25} ref={parallaxRef}>
+			<Parallax pages={4.5} ref={parallaxRef}>
 				<div ref={rootRef} className="storybook-root">
 					<div className="bg-layer">
 						<div
@@ -143,9 +143,12 @@ const Storybook = () => {
 								focus on the MERN stack.
 							</p>
 							<p>
-								<div className="right-container">
+								<div
+									className="right-container"
+									style={{ marginRight: "1rem", marginBottom: "3rem" }}
+								>
 									<img
-										src={`${process.env.PUBLIC_URL}/avatar.png`}
+										src={`${process.env.PUBLIC_URL}/okcomputer.png`}
 										alt=""
 										style={{
 											width: "150px",
@@ -169,7 +172,7 @@ const Storybook = () => {
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={1} speed={0.5} factor={0.5}>
+					<ParallaxLayer offset={1.2} speed={0.5} factor={0.5}>
 						<section className="scene geography-scene center">
 							<h2>Early Life</h2>
 							<div className="globe-emoji macro">🌎</div>
@@ -178,7 +181,7 @@ const Storybook = () => {
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={1.5} speed={0.3} factor={0.5}>
+					<ParallaxLayer offset={1.8} speed={0.3} factor={0.5}>
 						<section id="early-life" className="scene center">
 							<p>
 								<div className="right-container">
@@ -218,6 +221,18 @@ const Storybook = () => {
 
 							<div className="education-panel ">
 								<p>
+									<div className="left-container">
+										<img
+											src={`${process.env.PUBLIC_URL}/education.png`}
+											alt=""
+											style={{
+												width: "150px",
+												height: "150px",
+												borderRadius: "40%",
+												shapeOutside: "circle(50%), float: left",
+											}}
+										/>
+									</div>
 									Bachelor of Science in Computer Science, University of West
 									Georgia Lorem ipsum dolor sit, amet consectetur adipisicing
 									elit. Possimus, itaque atque. Culpa asperiores similique, at
@@ -294,12 +309,12 @@ const Storybook = () => {
 								</p>
 								<br />
 								<p>
-									<div className="right-container">
+									<div className="left-container">
 										<img
 											src={`${process.env.PUBLIC_URL}/rampTest.gif`}
 											alt=""
 											style={{
-												height: "180px",
+												height: "150px",
 												borderRadius: "50%",
 												shapeOutside: "circle(50%)",
 											}}
