@@ -241,9 +241,9 @@ const Storybook = () => {
 
 					<ParallaxLayer offset={2.75} speed={0.3} factor={1}>
 						<section className="scene career-scene center">
-							<div className="briefcase-emoji macro">💼</div>
 							<div className="career-panel ">
 								<h2>Professional Career</h2>
+								<hr />
 								<p>
 									As a Senior Software Engineer at Accenture, I serve as a
 									subject matter expert in transforming monolithic legacy
@@ -255,11 +255,11 @@ const Storybook = () => {
 								<p>
 									<div className="right-container">
 										<img
-											src={`${process.env.PUBLIC_URL}/rampTest.gif`}
+											src={`${process.env.PUBLIC_URL}/professional.gif`}
 											alt=""
 											style={{
-												height: "140px",
-												borderRadius: "40%",
+												height: "180px",
+												borderRadius: "50%",
 												shapeOutside: "circle(50%)",
 												objectFit: "contain",
 												marginBottom: "5rem",
@@ -296,7 +296,7 @@ const Storybook = () => {
 								<p>
 									<div className="right-container">
 										<img
-											src={`${process.env.PUBLIC_URL}/lego.png`}
+											src={`${process.env.PUBLIC_URL}/rampTest.gif`}
 											alt=""
 											style={{
 												height: "180px",
