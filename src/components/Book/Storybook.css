@@ -87,12 +87,12 @@ html,
 	margin-bottom: 3rem;
 }
 .right-container {
-	width: 100px;
+	width: 130px;
 	height: 100px;
 	shape-outside: circle(50%);
 	float: right;
 	margin-right: 4rem;
-	margin-bottom: 3rem;
+	margin-bottom: 5rem;
 }
 
 .cloud {

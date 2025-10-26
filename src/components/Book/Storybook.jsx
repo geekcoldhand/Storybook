@@ -183,11 +183,10 @@ const Storybook = () => {
 							<p>
 								<div className="right-container">
 									<img
-										src={`${process.env.PUBLIC_URL}/avatar.png`}
+										src={`${process.env.PUBLIC_URL}/lego.png`}
 										alt=""
 										style={{
-											width: "150px",
-											height: "150px",
+											height: "180px",
 											borderRadius: "50%",
 											shapeOutside: "circle(50%)",
 										}}
@@ -254,6 +253,20 @@ const Storybook = () => {
 								</p>
 								<br />
 								<p>
+									<div className="right-container">
+										<img
+											src={`${process.env.PUBLIC_URL}/rampTest.gif`}
+											alt=""
+											style={{
+												height: "140px",
+												borderRadius: "40%",
+												shapeOutside: "circle(50%)",
+												objectFit: "contain",
+												marginBottom: "5rem",
+												paddingLeft: "1rem",
+											}}
+										/>
+									</div>
 									I consistently implement automated CI/CD pipelines, develop
 									secure and efficient RESTful APIs, and provision
 									infrastructure using Infrastructure-as-Code tools.
@@ -281,9 +294,26 @@ const Storybook = () => {
 								</p>
 								<br />
 								<p>
-									I thrive on solving complex technical challenges and designing
-									scalable systems, drawing energy from collaborative
-									environments where innovation leads the way.
+									<div className="right-container">
+										<img
+											src={`${process.env.PUBLIC_URL}/lego.png`}
+											alt=""
+											style={{
+												height: "180px",
+												borderRadius: "50%",
+												shapeOutside: "circle(50%)",
+											}}
+										/>
+									</div>
+									I discovered a love for embedded programming languages (Java
+									and C++) in high school from my dad.
+									<br />
+									That excitement led to me majoring in Computer Science,
+									growing my focus toward web development. Lorem ipsum dolor sit
+									amet consectetur adipisicing elit. Officia labore nemo sint
+									obcaecati iusto. Optio culpa sunt velit reiciendis eligendi
+									distinctio sint dignissimos aspernatur, natus corrupti,
+									voluptates pariatur voluptatibus debitis?
 								</p>
 								<br />
 								<p>
