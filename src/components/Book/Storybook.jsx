@@ -119,7 +119,7 @@ const Storybook = () => {
 							<p>
 								<div className="left-container">
 									<img
-										src={`${process.env.PUBLIC_URL}/avatar.png`}
+										src={`${process.env.PUBLIC_URL}/onStage.gif`}
 										alt=""
 										style={{
 											width: "150px",
@@ -142,21 +142,44 @@ const Storybook = () => {
 								certification from the Georgia Institute of Technology, with a
 								focus on the MERN stack.
 							</p>
+							<p>
+								<div className="right-container">
+									<img
+										src={`${process.env.PUBLIC_URL}/avatar.png`}
+										alt=""
+										style={{
+											width: "150px",
+											height: "150px",
+											borderRadius: "50%",
+											shapeOutside: "circle(50%)",
+										}}
+									/>
+								</div>
+								I discovered a love for embedded programming languages (Java and
+								C++) in high school from my dad.
+								<br />
+								That excitement led to me majoring in Computer Science, growing
+								my focus toward web development. Lorem ipsum dolor sit amet
+								consectetur adipisicing elit. Officia labore nemo sint obcaecati
+								iusto. Optio culpa sunt velit reiciendis eligendi distinctio
+								sint dignissimos aspernatur, natus corrupti, voluptates pariatur
+								voluptatibus debitis?
+							</p>
+							<br />
 						</section>
 					</ParallaxLayer>
 
 					<ParallaxLayer offset={1} speed={0.5} factor={0.5}>
 						<section className="scene geography-scene center">
-							<h2>Where I'm From</h2>
+							<h2>Early Life</h2>
 							<div className="globe-emoji macro">🌎</div>
-							<div className="map-usa micro fade-in">🇺🇸</div>
+
 							<p> im from Alpharetta, Georgia</p>
 						</section>
 					</ParallaxLayer>
 
 					<ParallaxLayer offset={1.5} speed={0.3} factor={0.5}>
 						<section id="early-life" className="scene center">
-							<h2>Early Life</h2>
 							<p>
 								<div className="right-container">
 									<img
