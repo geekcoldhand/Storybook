@@ -20,7 +20,7 @@ html,
 	height: 100%;
 }
 .storybook-root {
- font-family: "Helvetica", sans-serif;
+	font-family: "Helvetica", sans-serif;
 	color: var(--c6);
 	position: relative;
 }
@@ -31,6 +31,10 @@ html,
 	filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
 }
 
+.scene {
+	min-height: 100vh;
+	padding: .5rem 1rem;
+}
 .emoji {
 	width: 10rem;
 	height: 10rem;
@@ -117,10 +121,6 @@ html,
 	will-change: transform;
 }
 
-.scene {
-	min-height: 100vh;
-	padding: 6rem 1rem;
-}
 .hero-content {
 }
 .hero-scene .hero-content {

@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "./Storybook.css";
+import Hero from "../Hero/Hero";
 import About from "../About/About";
 import Geogrophy from "../Geography/Geography";
 import Education from "../Education/Education";
@@ -43,7 +44,7 @@ const Storybook = () => {
 				<div className="progress-bar" ref={progressRef}></div>
 			</div>
 
-			<Parallax pages={5} ref={parallaxRef}>
+			<Parallax pages={7} ref={parallaxRef}>
 				<div ref={rootRef} className="storybook-root">
 					<div className="bg-layer">
 						<div
@@ -52,97 +53,57 @@ const Storybook = () => {
 							aria-label="placeholder background"
 						/>
 					</div>
-					<ParallaxLayer offset={0} speed={0.5} factor={0.5}>
-						<section className="scene hero-scene center">
-							<div className="hero-content center">
-								<div className="emoji circle-border">
-									<img
-										src={`${process.env.PUBLIC_URL}/avatar.png`}
-										alt=""
-										className="hero-avatar "
-									/>
-								</div>
-
-								<div className="name-container">
-									<h1 className="hero-title permanent">
-										Hi, my name is <span className="hero-name ">Horatious</span>
-									</h1>
-								</div>
-							</div>
-						</section>
+					<ParallaxLayer
+						offset={0}
+						speed={0.5}
+						factor={0.5}
+						style={{ zIndex: 10 }}
+					>
+						<Hero />
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={0} speed={1.5} factor={0.5} horizontal={true}>
-						<img
-							className="cloud"
-							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-							alt=""
-							style={{
-								transform: "translateY(68vh) translateX(10vw)",
-							}}
-						/>
-					</ParallaxLayer>
-					<ParallaxLayer offset={0} speed={-1.5} factor={0.5} horizontal={true}>
-						<img
-							className="cloud"
-							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-							alt=""
-							style={{
-								transform: "translateY(60vh) translateX(60vw)",
-							}}
-						/>
+					<ParallaxLayer offset={0} speed={1.5} factor={0.1} horizontal={true}>
+						<Cloud1 />
 					</ParallaxLayer>
 					<ParallaxLayer
-						offset={0.0}
-						speed={1.5}
-						factor={0.5}
+						offset={0.1}
+						speed={-1.5}
+						factor={0.1}
 						horizontal={true}
 					>
-						<img
-							className="cloud"
-							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-							alt=""
-							style={{
-								transform: "translateY(30vh) translateX(40%)",
-							}}
-						/>
+						<Cloud2 />
 					</ParallaxLayer>
-					<ParallaxLayer offset={0} speed={-1.5} factor={0.5} horizontal={true}>
-						<img
-							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-							alt=""
-							style={{
-								transform: "translateY(65vh) translateX(47%) ",
-								height: "10rem",
-							}}
-						/>
+					<ParallaxLayer offset={0} speed={-1.5} factor={0.1} horizontal={true}>
+						<Cloud3 />
 					</ParallaxLayer>
-					<ParallaxLayer offset={0} speed={1.5} factor={-1} horizontal={true}>
-						<img
-							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-							alt=""
-							style={{
-								height: "10rem",
-								transform: "translateY(17vh) translateX(-25%) rotate(180deg)",
-							}}
-						/>
+					<ParallaxLayer offset={0} speed={-1.5} factor={0.1} horizontal={true}>
+						<Cloud4 />
 					</ParallaxLayer>
-					<ParallaxLayer offset={0} speed={1.5} factor={-1} horizontal={true}>
-						<img
-							src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-							alt=""
-							style={{
-								height: "7rem",
-								transform: "translateY(77vh) translateX(-15%) rotate(180deg)",
-							}}
-						/>
+					<ParallaxLayer offset={0} speed={-1.5} factor={0.1} horizontal={true}>
+						<Cloud5 />
+					</ParallaxLayer>
+					<ParallaxLayer offset={0} speed={1.5} factor={0.1} horizontal={true}>
+						<Cloud6 />
+					</ParallaxLayer>
+					<ParallaxLayer offset={0} speed={1.5} factor={0.1} horizontal={true}>
+						<Cloud7 />
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={0.8} speed={0.5} factor={0.5}>
+					{/* Train Animaiton */}
+					<ParallaxLayer offset={.9} speed={-1.8} factor={1} horizontal={true}>
+						<Train />
+					</ParallaxLayer>
+
+					{/* {City} */}
+					<ParallaxLayer offset={.9} speed={0} factor={1}>
+						<City />
+					</ParallaxLayer>
+
+					<ParallaxLayer offset={1} speed={0.5} factor={1}>
 						<About />
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={1.2} speed={0.5} factor={0.5}>
+					<ParallaxLayer offset={2} speed={0.5} factor={0.5}>
 						<section className="scene geography-scene center">
 							<h2 className="permanent xxxl">Early Life</h2>
 							<div className="globe-emoji macro">🌎</div>
@@ -151,19 +112,19 @@ const Storybook = () => {
 						</section>
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={1.8} speed={0.3} factor={1}>
+					<ParallaxLayer offset={3} speed={0.3} factor={1}>
 						<Geogrophy />
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={2.5} speed={0.3} factor={1}>
+					<ParallaxLayer offset={4} speed={0.3} factor={1}>
 						<Education />
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={3} speed={0.3} factor={1}>
+					<ParallaxLayer offset={5} speed={0.3} factor={0.5}>
 						<Professional />
 					</ParallaxLayer>
 
-					<ParallaxLayer offset={3.85} speed={0.3} factor={1}>
+					<ParallaxLayer offset={6} speed={0.3} factor={0.5}>
 						<Today />
 					</ParallaxLayer>
 					<footer className=" footer-scene center">
@@ -174,4 +135,117 @@ const Storybook = () => {
 		</>
 	);
 };
+const City = () => {
+return (
+	<img
+		src={`${process.env.PUBLIC_URL}/atlanta.png`}
+		alt=""
+		style={{
+			height: "20rem",
+			transform: "translateY(100vh) translateX(0vw)",
+		}}
+	/>
+)
+}
+const Train = () => {
+	return (
+		<img
+			src={`${process.env.PUBLIC_URL}/marta.png`}
+			alt=""
+			style={{
+				height: "4rem",
+				transform: "translateY(100vh) translateX(-530vw)",
+			}}
+		/>
+	);
+};
+const Cloud1 = () => {
+	return (
+		<img
+			className="cloud"
+			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+			alt=""
+			style={{}}
+		/>
+	);
+};
+
+const Cloud2 = () => {
+	return (
+		<img
+			className="cloud"
+			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+			alt=""
+			style={{
+				transform: "translateY(60vh) translateX(60vw)",
+			}}
+		/>
+	);
+};
+
+const Cloud3 = () => {
+	return (
+		<img
+			className="cloud"
+			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+			alt=""
+			style={{
+				transform: "translateY(70vh) translateX(80vw)",
+			}}
+		/>
+	);
+};
+
+const Cloud4 = () => {
+	return (
+		<img
+			className="cloud"
+			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+			alt=""
+			style={{
+				transform: "translateY(70vh) translateX(40vw)",
+			}}
+		/>
+	);
+};
+
+const Cloud5 = () => {
+	return (
+		<img
+			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+			alt=""
+			style={{
+				transform: "translateY(65vh) translateX(47%) ",
+				height: "10rem",
+			}}
+		/>
+	);
+};
+
+const Cloud6 = () => {
+	return (
+		<img
+			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+			alt=""
+			style={{
+				height: "10rem",
+				transform: "translateY(63vh) translateX(-65%) rotate(180deg)",
+			}}
+		/>
+	);
+};
+
+const Cloud7 = () => {
+	return (
+		<img
+			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
+			alt=""
+			style={{
+				height: "7rem",
+				transform: "translateY(77vh) translateX(-15%) rotate(180deg)",
+			}}
+		/>
+	);
+};
+
 export default Storybook;
