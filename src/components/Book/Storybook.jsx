@@ -335,8 +335,8 @@ const Storybook = () => {
 					<ParallaxLayer offset={3.85} speed={0.3} factor={1}>
 						<section className="scene today-scene center">
 							<div className="today-panel ">
-								<h2 className="permanent xxxl">Current Projects</h2>
-								<hr />
+								<h2 className="permanent xxxl">Recently</h2>
+								
 								<p>
 									I continue to expand my expertise in AWS Cloud Services and
 									explore emerging trends in software development and

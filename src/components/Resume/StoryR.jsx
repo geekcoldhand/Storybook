@@ -45,6 +45,8 @@ const StorySection = ({ id, title, story, images, bgGradient, donutText }) => {
       duration: 1
     }, '-=0.5');
 
+
+
     // Gradient parallax effect
     gsap.to(section, {
       scrollTrigger: {
