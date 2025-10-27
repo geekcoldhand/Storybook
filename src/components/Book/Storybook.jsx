@@ -18,7 +18,7 @@ const Storybook = () => {
 
 		ScrollTrigger.create({
 			trigger: parallaxRef.current.container.current,
-			scroller: parallaxRef.current.container.current, // 👈 key part
+			scroller: parallaxRef.current.container.current, 
 			start: "top top",
 			end: "bottom bottom",
 			scrub: true,
