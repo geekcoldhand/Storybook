@@ -8,6 +8,7 @@
 	--c6: #213f7c;
 	--bg: linear-gradient(180deg, var(--c1), var(--c6));
 	--audio-font: "Audiowide", sans-serif;
+	--helv-font: "Helvetica", sans-serif;
 }
 
 * {
@@ -151,6 +152,15 @@ html,
 	margin-top: 2rem;
 	font-family: --var(--audio-font);
 }
+.banner{
+	font-size: 2.5rem;
+	text-align: center;
+	font-family: var(--audio-font);
+	font-weight: 400;
+	animation: banner 14s ease-in-out infinite;
+	width: 250vw;
+	transform: translateY(10vh);
+}
 
 .storyaParagraph {
 	font-size: 1rem;
@@ -242,5 +252,14 @@ html,
 	}
 	to {
 		transform: rotate(360deg);
+	}
+}
+
+@keyframes banner {
+	0% {
+		transform: translateX(100%) translateY(-20vh);
+	}
+	100% {
+		transform: translateX(-100%) translateY(-20vh);
 	}
 }

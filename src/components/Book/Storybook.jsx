@@ -72,7 +72,7 @@ const Storybook = () => {
 				<div className="progress-bar" ref={progressRef}></div>
 			</div>
 
-			<Parallax pages={7} ref={parallaxRef}>
+			<Parallax pages={7.5} ref={parallaxRef}>
 				<div ref={rootRef} className="storybook-root">
 					<div className="bg-layer">
 						<div
@@ -189,6 +189,10 @@ const Storybook = () => {
 					<ParallaxLayer offset={4} speed={0.3} factor={1}>
 						<Education />
 					</ParallaxLayer>
+					{/* <<<<<<<<<< Banner  >>>>>>>>> */}
+					<ParallaxLayer offset={5} speed={0.3} factor={0.5}>
+						<Banner />
+					</ParallaxLayer>
 					{/* <<<<<<<<<< Professional >>>>>>>>> */}
 					<ParallaxLayer offset={5} speed={0.3} factor={0.5}>
 						<Professional />
@@ -196,6 +200,10 @@ const Storybook = () => {
 					{/* <<<<<<<<<< Today >>>>>>>>> */}
 					<ParallaxLayer offset={6} speed={0.3} factor={0.5}>
 						<Today />
+					</ParallaxLayer>
+					{/* <<<<<<<<<< Projects >>>>>>>>> */}
+					<ParallaxLayer offset={7.4} speed={0.3} factor={0.5}>
+						<TV2 />
 					</ParallaxLayer>
 					<footer className=" footer-scene center">
 						<small className="pinstripe">Storybook</small>
@@ -206,16 +214,29 @@ const Storybook = () => {
 	);
 };
 
+
+const Banner = () => {
+	return (
+		<div className="banner-container">
+			<h2 className="banner permanent ">SKILLS & EXPERIENCE BADGES ADDED HERE!</h2>
+		</div>
+	);
+}
 const Biker = () => {
 	return (
-		<div className="biker">			
+		<div className="biker">
 			<img
-				src={`${process.env.PUBLIC_URL}/biker.png`}
+				src={`${process.env.PUBLIC_URL}/marta.png`}
 				alt=""
-				style={{height: "16rem" ,width: "16rem", transform: "translateY(-40vh) translateX(20vw)" }}
+				style={{
+					height: "16rem",
+					
+					transform: "translateY(-120vh) translateX(-40vw)",
+				}}
 			/>
-		</div>)
-}
+		</div>
+	);
+};
 
 const TV = () => {
 	return (
@@ -223,19 +244,72 @@ const TV = () => {
 			<img
 				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
 				alt=""
-				style={{position: "relative",height: "6rem" ,width: "6rem", transform: "translateY(-70vh)" }}
+				style={{
+					position: "relative",
+					height: "6rem",
+					width: "6rem",
+					transform: "translateY(-70vh)",
+				}}
 			/>
 			<hr />
 			<img
 				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
 				alt=""
-				style={{position: "relative",height: "6rem" ,width: "6rem", transform: "translateY(-70vh)" }}
+				style={{
+					position: "relative",
+					height: "6rem",
+					width: "6rem",
+					transform: "translateY(-70vh)",
+				}}
 			/>
 			<hr />
 			<img
 				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
 				alt=""
-				style={{position: "relative",height: "6rem" ,width: "6rem", transform: "translateY(-70vh)" }}
+				style={{
+					position: "relative",
+					height: "6rem",
+					width: "6rem",
+					transform: "translateY(-70vh)",
+				}}
+			/>
+		</div>
+	);
+};
+const TV2 = () => {
+	return (
+		<div className="tv">
+			<img
+				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
+				alt=""
+				style={{
+					position: "relative",
+					height: "6rem",
+					width: "6rem",
+					transform: "translateY(-70vh)",
+				}}
+			/>
+			<hr />
+			<img
+				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
+				alt=""
+				style={{
+					position: "relative",
+					height: "6rem",
+					width: "6rem",
+					transform: "translateY(-70vh)",
+				}}
+			/>
+			<hr />
+			<img
+				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
+				alt=""
+				style={{
+					position: "relative",
+					height: "6rem",
+					width: "6rem",
+					transform: "translateY(-70vh)",
+				}}
 			/>
 		</div>
 	);
@@ -257,7 +331,6 @@ const Polariod = () => {
 				alt=""
 				style={{ height: "100%", zIndex: 0 }}
 				objectFit="cover"
-			
 			/>
 		</div>
 	);
