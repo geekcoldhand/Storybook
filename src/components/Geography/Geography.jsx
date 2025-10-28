@@ -10,6 +10,7 @@ export default function Geography() {
 							height: "180px",
 							borderRadius: "50%",
 							shapeOutside: "circle(50%)",
+							border: "2px solid navy",
 						}}
 					/>
 				</div>

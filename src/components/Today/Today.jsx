@@ -18,6 +18,7 @@ export default function Today() {
 								height: "150px",
 								borderRadius: "50%",
 								shapeOutside: "circle(50%)",
+								border: "2px solid navy",
 							}}
 						/>
 					</div>

@@ -22,7 +22,8 @@ export default function Professional() {
 								shapeOutside: "circle(50%)",
 								objectFit: "contain",
 								marginBottom: "5rem",
-								paddingLeft: "1rem",
+								marginLeft: "1rem",
+								border: "2px solid navy",
 							}}
 						/>
 					</div>

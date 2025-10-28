@@ -14,6 +14,7 @@ export default function Education() {
 								height: "150px",
 								borderRadius: "40%",
 								shapeOutside: "circle(50%), float: left",
+								
 							}}
 						/>
 					</div>
@@ -36,6 +37,7 @@ export default function Education() {
 								height: "150px",
 								borderRadius: "50%",
 								shapeOutside: "circle(50%), float: left",
+								border: "2px solid navy",
 							}}
 						/>
 					</div>

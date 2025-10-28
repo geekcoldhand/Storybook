@@ -53,6 +53,8 @@ const Storybook = () => {
 							aria-label="placeholder background"
 						/>
 					</div>
+
+					{/* <<<<<<<<< Hero >>>>>>>>>  */}
 					<ParallaxLayer
 						offset={0}
 						speed={0.5}
@@ -62,6 +64,7 @@ const Storybook = () => {
 						<Hero />
 					</ParallaxLayer>
 
+					{/* <<<<<<<<< Clouds >>>>>>>>  */}
 					<ParallaxLayer offset={0} speed={1.5} factor={0.1} horizontal={true}>
 						<Cloud1 />
 					</ParallaxLayer>
@@ -89,7 +92,7 @@ const Storybook = () => {
 						<Cloud7 />
 					</ParallaxLayer>
 
-					{/* Train Animaiton */}
+					{/* <<<<<<<<<< Train Animaiton >>>>>>>>>> */}
 					<ParallaxLayer
 						offset={0.9}
 						speed={-1.8}
@@ -100,7 +103,7 @@ const Storybook = () => {
 						<Train />
 					</ParallaxLayer>
 
-					{/* {City} */}
+					{/*  <<<<<<<<<<<< City >>>>>>>>>>>>> */}
 					<ParallaxLayer
 						offset={0.9}
 						speed={0.1}
@@ -109,12 +112,22 @@ const Storybook = () => {
 					>
 						<City />
 					</ParallaxLayer>
-
-
+					{/* <<<<<<<<<< About >>>>>>>>> */}
 					<ParallaxLayer offset={1} speed={0.5} factor={1}>
 						<About />
 					</ParallaxLayer>
 
+					{/* <<<<<<<<<<< Polariod >>>>>>>>> */}
+					<ParallaxLayer
+						offset={2}
+						speed={0.5}
+						factor={1}
+						style={{ zIndex: 1 }}
+					>
+						<Polariod />
+					</ParallaxLayer>
+
+					{/* <<<<<<<<<<<<< Geography >>>>>>>>> */}
 					<ParallaxLayer offset={2} speed={0.5} factor={0.5}>
 						<section className="scene geography-scene center">
 							<h2 className="permanent xxxl">Early Life</h2>
@@ -123,19 +136,19 @@ const Storybook = () => {
 							<p> im from Alpharetta, Georgia</p>
 						</section>
 					</ParallaxLayer>
-
+					{/* <<<<<<<<<<<<< Geography >>>>>>>>> */}
 					<ParallaxLayer offset={3} speed={0.3} factor={1}>
 						<Geogrophy />
 					</ParallaxLayer>
-
+					{/* <<<<<<<<<< Education >>>>>>>>> */}
 					<ParallaxLayer offset={4} speed={0.3} factor={1}>
 						<Education />
 					</ParallaxLayer>
-
+					{/* <<<<<<<<<< Professional >>>>>>>>> */}
 					<ParallaxLayer offset={5} speed={0.3} factor={0.5}>
 						<Professional />
 					</ParallaxLayer>
-
+					{/* <<<<<<<<<< Today >>>>>>>>> */}
 					<ParallaxLayer offset={6} speed={0.3} factor={0.5}>
 						<Today />
 					</ParallaxLayer>
@@ -147,6 +160,24 @@ const Storybook = () => {
 		</>
 	);
 };
+
+const Polariod = () => {
+	return (
+		<div
+			style={{
+				width: "100%",
+				height: "50vh",
+				border: "10px solid white",
+				transform: "translateY(-20vh) translateX(0vw)",
+
+			}}
+			className="polariod"
+		>
+			
+		</div>
+	);
+};
+
 const City = () => {
 	return (
 		<>
@@ -158,29 +189,11 @@ const City = () => {
 					transform: "translateY(-10vh) translateX(-10vw)",
 				}}
 			/>
-			<img
-				src={`${process.env.PUBLIC_URL}/railway.png`}
-				alt=""
-				style={{
-					height: "2rem",
-					transform: "translateY(-18vh) translateX(-44vw)"
-				}}
-			/>
 			;
 		</>
 	);
 };
-const Railwaay = () => {
-	return (
-		<img
-			src={`${process.env.PUBLIC_URL}/railway.png`}
-			alt=""
-			style={{
-				height: "2rem",
-			}}
-		/>
-	);
-};
+
 const Train = () => {
 	return (
 		<img
