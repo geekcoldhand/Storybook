@@ -1,13 +1,18 @@
 export default function Education() {
 	return (
 		<section className="scene education-scene center">
-			<h2 className="permanent xxxl">Education</h2>
+			<div className="chapter">
+				<hr />
+				<h2 className="audioFont xxxl">
+					Lorem ipsum dolor sit, amet consectetur
+				</h2>
+				<hr />
+			</div>
 
 			<div className="education-panel ">
 				<p className="storyaParagraph">
 					<div className="left-container">
 						<img
-							
 							src={`${process.env.PUBLIC_URL}/education.png`}
 							alt=""
 							style={{

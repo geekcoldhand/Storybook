@@ -169,10 +169,10 @@ const Storybook = () => {
 					</ParallaxLayer>
 
 					{/* <<<<<<<<<< Banner  >>>>>>>>> */}
-					<ParallaxLayer offset={5} speed={0.3} factor={0.5}>
+					<ParallaxLayer offset={5.2} speed={0.3} factor={0.5}>
 						<Banner />
 					</ParallaxLayer>
-			
+
 					{/* <<<<<<<<<< Professional >>>>>>>>> */}
 					<ParallaxLayer offset={5} speed={0.3} factor={0.5}>
 						<Professional />
@@ -199,9 +199,9 @@ const Storybook = () => {
 const Banner = () => {
 	return (
 		<div className="banner-container">
-			<h2 className="banner permanent ">
-				SKILLS & EXPERIENCE BADGES ADDED HERE!
-			</h2>
+			<h1 className="audioFont banner">
+				Lorem, ipsum dolor sit  consecte earum!
+			</h1>
 		</div>
 	);
 };
@@ -214,7 +214,7 @@ const Biker = () => {
 				style={{
 					height: "7rem",
 
-					transform: "translateY(475vh) translateX(-922vw)",
+					transform: "translateY(520vh) translateX(-922vw)",
 				}}
 			/>
 		</div>
@@ -264,34 +264,34 @@ const TV2 = () => {
 	return (
 		<div className="tv">
 			<img
-				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
+				src={`${process.env.PUBLIC_URL}/retroTV.png`}
 				alt=""
 				style={{
 					position: "relative",
-					height: "6rem",
-					width: "6rem",
+					height: "7rem",
+					width: "7rem",
 					transform: "translateY(-70vh)",
 				}}
 			/>
-			<hr />
+
 			<img
-				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
+				src={`${process.env.PUBLIC_URL}/retroTV.png`}
 				alt=""
 				style={{
 					position: "relative",
-					height: "6rem",
-					width: "6rem",
+					height: "7rem",
+					width: "7rem",
 					transform: "translateY(-70vh)",
 				}}
 			/>
-			<hr />
+
 			<img
-				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
+				src={`${process.env.PUBLIC_URL}/retroTV.png`}
 				alt=""
 				style={{
 					position: "relative",
-					height: "6rem",
-					width: "6rem",
+					height: "7rem",
+					width: "7rem",
 					transform: "translateY(-70vh)",
 				}}
 			/>

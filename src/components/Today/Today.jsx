@@ -2,8 +2,14 @@ export default function Today() {
 	return (
 		<section className="scene today-scene center">
 			<div className="today-panel ">
-				<h2 className="permanent xxxl">Recently</h2>
-
+				
+		<div className="chapter">
+				<hr />
+				<h2 className="audioFont xxxl">
+					Lorem ipsum dolor sit, amet consectetur
+				</h2>
+				<hr />
+			</div>
 				<p className="storyaParagraph">
 					I continue to expand my expertise in AWS Cloud Services and explore
 					emerging trends in software development and operations.
