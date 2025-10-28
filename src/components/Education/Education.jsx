@@ -4,7 +4,7 @@ export default function Education() {
 			<h2 className="permanent xxxl">Education</h2>
 
 			<div className="education-panel ">
-				<p>
+				<p className="storyaParagraph">
 					<div className="left-container">
 						<img
 							src={`${process.env.PUBLIC_URL}/education.png`}

@@ -8,7 +8,7 @@ export default function About() {
 				<h2 className="audioFont xxxl">Lorem ipsum dolor sit, amet consectetur</h2>
 				<hr />
 			</div>
-			<p>
+			<p className="storyaParagraph">
 				<div className="left-container">
 					<img
 						src={`${process.env.PUBLIC_URL}/onStage.gif`}
@@ -29,12 +29,12 @@ export default function About() {
 				practices.
 			</p>
 			<br />
-			<p>
+			<p className="storyaParagraph">
 				I hold a Bachelor of Science in Computer Science from the University of
 				West Georgia and a Full Stack Development certification from the Georgia
 				Institute of Technology, with a focus on the MERN stack. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 			</p>
-			<p>
+			<p className="storyaParagraph">
 				<div
 					className="right-container"
 					style={{ marginRight: "1rem", marginBottom: "3rem" }}

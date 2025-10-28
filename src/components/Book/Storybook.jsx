@@ -128,7 +128,7 @@ const Storybook = () => {
 					</ParallaxLayer>
 
 					{/* <<<<<<<<<<<<< Geography >>>>>>>>> */}
-					<ParallaxLayer offset={2.1} speed={0.5} factor={0.5}>
+					<ParallaxLayer offset={2.5} speed={0.5} factor={0.5}>
 						<section className="scene geography-scene center">
 							<div className="chapter">
 								<hr />
@@ -171,7 +171,7 @@ const Polariod = () => {
 				width: "100%",
 				height: "65vh",
 				border: "10px solid white",
-				transform: "translateY(-20vh) translateX(0vw)",
+				transform: "translateY(10vh) translateX(0vw)",
 			}}
 			className="polariod"
 		></div>

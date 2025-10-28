@@ -4,12 +4,12 @@ export default function Today() {
 			<div className="today-panel ">
 				<h2 className="permanent xxxl">Recently</h2>
 
-				<p>
+				<p className="storyaParagraph">
 					I continue to expand my expertise in AWS Cloud Services and explore
 					emerging trends in software development and operations.
 				</p>
 				<br />
-				<p>
+				<p className="storyaParagraph">
 					<div className="left-container">
 						<img
 							src={`${process.env.PUBLIC_URL}/rampTest.gif`}
@@ -32,7 +32,7 @@ export default function Today() {
 					aspernatur, natus corrupti, voluptates pariatur voluptatibus debitis?
 				</p>
 				<br />
-				<p>
+				<p className="storyaParagraph"> 
 					I'm always open to connecting with people who share my passion for
 					learning, teaching, and discussing new technologies.
 				</p>

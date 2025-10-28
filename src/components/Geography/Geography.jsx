@@ -1,7 +1,7 @@
 export default function Geography() {
 	return (
 		<section id="early-life" className="scene center">
-			<p>
+			<p className="storyaParagraph">
 				<div className="right-container">
 					<img
 						src={`${process.env.PUBLIC_URL}/lego.png`}
@@ -24,7 +24,7 @@ export default function Geography() {
 				natus corrupti, voluptates pariatur voluptatibus debitis?
 			</p>
 			<br />
-			<p>
+			<p className="storyaParagraph">
 				Hours of preparation for hackathons, app competitions, and tech
 				conferences have comforted me in fast-paced learning and collaborative
 				environments. Diversity and collaboration gravitate me the most toward
