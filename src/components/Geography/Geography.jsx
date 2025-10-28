@@ -2,15 +2,20 @@ export default function Geography() {
 	return (
 		<section id="early-life" className="scene center">
 			<p className="storyaParagraph">
-				<div className="right-container">
+				<div
+					className="right-container"
+					style={{ width: "180px", marginRight: "0rem" }}
+				>
 					<img
-						src={`${process.env.PUBLIC_URL}/lego.png`}
+						className="circle-image"
+						src={`${process.env.PUBLIC_URL}/soapbox.gif`}
 						alt=""
 						style={{
 							height: "180px",
+							width: "180px",
 							borderRadius: "50%",
 							shapeOutside: "circle(50%)",
-							border: "2px solid navy",
+							
 						}}
 					/>
 				</div>

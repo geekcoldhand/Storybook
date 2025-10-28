@@ -3,7 +3,7 @@
 	--c1: #b0c4e8;
 	--c2: #7b90b8;
 	--c3: #6476a0;
-	--c4: #3e6194;
+	--c4: rgb(62, 97, 148);
 	--c5: #2f5586;
 	--c6: #213f7c;
 	--bg: linear-gradient(180deg, var(--c1), var(--c6));
@@ -90,8 +90,15 @@ html,
 	transform: scaleX(0);
 	box-shadow: 0 2px 8px rgba(46, 62, 95, 0.69);
 }
-
-.tv{
+.tv-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: auto;
+	background: url("../../../public/retroTV.png");
+}
+.tv {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -102,6 +109,10 @@ html,
 .circle-border {
 	border-radius: 100%;
 	border: 10px rgb(119, 148, 205) solid;
+}
+
+.circle-image {
+	border: 2px solid rgb(62, 97, 148);
 }
 .left-container {
 	width: 100px;
@@ -129,7 +140,7 @@ html,
 .polariod::after {
 	content: "Lorem ipsum dolor";
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	background-color: white;
 	border-right: 10px solid white;
@@ -152,7 +163,7 @@ html,
 	margin-top: 2rem;
 	font-family: --var(--audio-font);
 }
-.banner{
+.banner {
 	font-size: 2.5rem;
 	text-align: center;
 	font-family: var(--audio-font);

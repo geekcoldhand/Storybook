@@ -12,13 +12,13 @@ export default function Today() {
 				<p className="storyaParagraph">
 					<div className="left-container">
 						<img
+							className="circle-image"
 							src={`${process.env.PUBLIC_URL}/rampTest.gif`}
 							alt=""
 							style={{
 								height: "150px",
 								borderRadius: "50%",
 								shapeOutside: "circle(50%)",
-								border: "2px solid navy",
 							}}
 						/>
 					</div>
@@ -32,7 +32,7 @@ export default function Today() {
 					aspernatur, natus corrupti, voluptates pariatur voluptatibus debitis?
 				</p>
 				<br />
-				<p className="storyaParagraph"> 
+				<p className="storyaParagraph">
 					I'm always open to connecting with people who share my passion for
 					learning, teaching, and discussing new technologies.
 				</p>

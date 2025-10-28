@@ -7,6 +7,7 @@ export default function Education() {
 				<p className="storyaParagraph">
 					<div className="left-container">
 						<img
+							
 							src={`${process.env.PUBLIC_URL}/education.png`}
 							alt=""
 							style={{
@@ -14,7 +15,6 @@ export default function Education() {
 								height: "150px",
 								borderRadius: "40%",
 								shapeOutside: "circle(50%), float: left",
-								
 							}}
 						/>
 					</div>
@@ -30,6 +30,7 @@ export default function Education() {
 					<br />
 					<div className="right-container" style={{ marginRight: "1rem" }}>
 						<img
+							className="circle-image"
 							src={`${process.env.PUBLIC_URL}/einstein.png`}
 							alt=""
 							style={{
@@ -37,7 +38,6 @@ export default function Education() {
 								height: "150px",
 								borderRadius: "50%",
 								shapeOutside: "circle(50%), float: left",
-								border: "2px solid navy",
 							}}
 						/>
 					</div>

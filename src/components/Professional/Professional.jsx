@@ -3,7 +3,7 @@ export default function Professional() {
 		<section className="scene career-scene center">
 			<div className="career-panel ">
 				<h2 className="permanent xxxl">Professional Career</h2>
-				<hr />
+
 				<p className="storyaParagraph">
 					As a Senior Software Engineer at Accenture, I serve as a subject
 					matter expert in transforming monolithic legacy systems into
@@ -14,6 +14,7 @@ export default function Professional() {
 				<p className="storyaParagraph">
 					<div className="right-container">
 						<img
+							className="circle-image"
 							src={`${process.env.PUBLIC_URL}/professional.gif`}
 							alt=""
 							style={{
@@ -23,7 +24,6 @@ export default function Professional() {
 								objectFit: "contain",
 								marginBottom: "5rem",
 								marginLeft: "1rem",
-								border: "2px solid navy",
 							}}
 						/>
 					</div>

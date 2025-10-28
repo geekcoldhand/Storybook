@@ -10,6 +10,7 @@ import Geogrophy from "../Geography/Geography";
 import Education from "../Education/Education";
 import Professional from "../Professional/Professional";
 import Today from "../Today/Today";
+import Clouds from "../Clouds/Clouds";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -37,33 +38,7 @@ const Storybook = () => {
 			},
 		});
 
-		//fade in on scroll
-		// 	const tl = gsap.timeline({
-		//   scrollTrigger: {
-		//     trigger: section,
-		//     start: 'top 60%',
-		//     end: 'bottom 40%',
-		//     toggleActions: 'play none none reverse',
-		//     scrub: 2,
-		//   }
-		// });
-
-		// tl.from(titleRef.current, {
-		//   opacity: 0,
-		//   y: 50,
-		//   duration: 1
-		// })
-		// .from(storyRef.current, {
-		//   opacity: 0,
-		//   y: 30,
-		//   duration: 1
-		// }, '-=0.5')
-		// .from(imagesRef.current, {
-		//   opacity: 0,
-		//   scale: 0.8,
-		//   stagger: 0.2,
-		//   duration: 1
-		// }, '-=0.5');
+	
 	});
 
 	return (
@@ -94,7 +69,8 @@ const Storybook = () => {
 
 					{/* <<<<<<<<< Clouds >>>>>>>>  */}
 					<ParallaxLayer offset={0} speed={1.5} factor={0.1} horizontal={true}>
-						<Cloud1 />
+						{/* <Cloud1 /> */}
+						{Clouds.Cloud1()}
 					</ParallaxLayer>
 					<ParallaxLayer
 						offset={0.1}
@@ -102,22 +78,22 @@ const Storybook = () => {
 						factor={0.1}
 						horizontal={true}
 					>
-						<Cloud2 />
+						{Clouds.Cloud2()}
 					</ParallaxLayer>
 					<ParallaxLayer offset={0} speed={-1.5} factor={0.1} horizontal={true}>
-						<Cloud3 />
+						{Clouds.Cloud3()}
 					</ParallaxLayer>
 					<ParallaxLayer offset={0} speed={-1.5} factor={0.1} horizontal={true}>
-						<Cloud4 />
+						{Clouds.Cloud4()}
 					</ParallaxLayer>
 					<ParallaxLayer offset={0} speed={-1.5} factor={0.1} horizontal={true}>
-						<Cloud5 />
+						{Clouds.Cloud5()}
 					</ParallaxLayer>
 					<ParallaxLayer offset={0} speed={1.5} factor={0.1} horizontal={true}>
-						<Cloud6 />
+						{Clouds.Cloud6()}
 					</ParallaxLayer>
 					<ParallaxLayer offset={0} speed={1.5} factor={0.1} horizontal={true}>
-						<Cloud7 />
+						{Clouds.Cloud7()}
 					</ParallaxLayer>
 
 					{/* <<<<<<<<<< Train Animaiton >>>>>>>>>> */}
@@ -180,7 +156,7 @@ const Storybook = () => {
 					>
 						<Biker />
 					</ParallaxLayer>
-
+					{/* <<<<<<<<<< TV >>>>>>>>> */}
 					<ParallaxLayer offset={4} speed={0.3} factor={1}>
 						<TV />
 					</ParallaxLayer>
@@ -214,14 +190,15 @@ const Storybook = () => {
 	);
 };
 
-
 const Banner = () => {
 	return (
 		<div className="banner-container">
-			<h2 className="banner permanent ">SKILLS & EXPERIENCE BADGES ADDED HERE!</h2>
+			<h2 className="banner permanent ">
+				SKILLS & EXPERIENCE BADGES ADDED HERE!
+			</h2>
 		</div>
 	);
-}
+};
 const Biker = () => {
 	return (
 		<div className="biker">
@@ -230,7 +207,7 @@ const Biker = () => {
 				alt=""
 				style={{
 					height: "16rem",
-					
+
 					transform: "translateY(-120vh) translateX(-40vw)",
 				}}
 			/>
@@ -242,7 +219,19 @@ const TV = () => {
 	return (
 		<div className="tv">
 			<img
-				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
+				src={`${process.env.PUBLIC_URL}/onStage.gif`}
+				alt=""
+				style={{
+					position: "relative",
+					height: "6rem",
+					width: "6rem",
+					transform: "translateY(-70vh)",
+				}}
+			/>
+
+			<hr />
+			<img
+				src={`${process.env.PUBLIC_URL}/onStage.gif`}
 				alt=""
 				style={{
 					position: "relative",
@@ -253,18 +242,7 @@ const TV = () => {
 			/>
 			<hr />
 			<img
-				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
-				alt=""
-				style={{
-					position: "relative",
-					height: "6rem",
-					width: "6rem",
-					transform: "translateY(-70vh)",
-				}}
-			/>
-			<hr />
-			<img
-				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
+				src={`${process.env.PUBLIC_URL}/onStage.gif`}
 				alt=""
 				style={{
 					position: "relative",
@@ -327,7 +305,7 @@ const Polariod = () => {
 			className="polariod"
 		>
 			<img
-				src={`${process.env.PUBLIC_URL}/soapbox.gif`}
+				src={`${process.env.PUBLIC_URL}/rampTest.gif`}
 				alt=""
 				style={{ height: "100%", zIndex: 0 }}
 				objectFit="cover"
@@ -347,7 +325,6 @@ const City = () => {
 					transform: "translateY(-10vh) translateX(-10vw)",
 				}}
 			/>
-			;
 		</>
 	);
 };
@@ -360,94 +337,6 @@ const Train = () => {
 			style={{
 				height: "4rem",
 				transform: "translateY(95vh) translateX(-480vw)",
-			}}
-		/>
-	);
-};
-const Cloud1 = () => {
-	return (
-		<img
-			className="cloud"
-			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-			alt=""
-			style={{}}
-		/>
-	);
-};
-
-const Cloud2 = () => {
-	return (
-		<img
-			className="cloud"
-			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-			alt=""
-			style={{
-				transform: "translateY(60vh) translateX(60vw)",
-			}}
-		/>
-	);
-};
-
-const Cloud3 = () => {
-	return (
-		<img
-			className="cloud"
-			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-			alt=""
-			style={{
-				transform: "translateY(70vh) translateX(80vw)",
-			}}
-		/>
-	);
-};
-
-const Cloud4 = () => {
-	return (
-		<img
-			className="cloud"
-			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-			alt=""
-			style={{
-				transform: "translateY(70vh) translateX(40vw)",
-			}}
-		/>
-	);
-};
-
-const Cloud5 = () => {
-	return (
-		<img
-			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-			alt=""
-			style={{
-				transform: "translateY(65vh) translateX(47%) ",
-				height: "10rem",
-			}}
-		/>
-	);
-};
-
-const Cloud6 = () => {
-	return (
-		<img
-			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-			alt=""
-			style={{
-				height: "10rem",
-				transform: "translateY(63vh) translateX(-65%) rotate(180deg)",
-			}}
-		/>
-	);
-};
-
-const Cloud7 = () => {
-	return (
-		<img
-			src={`${process.env.PUBLIC_URL}/drawnClouds.png`}
-			alt=""
-			style={{
-				height: "7rem",
-				transform: "translateY(77vh) translateX(-15%) rotate(180deg)",
 			}}
 		/>
 	);
