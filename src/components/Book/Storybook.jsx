@@ -37,8 +37,6 @@ const Storybook = () => {
 				});
 			},
 		});
-
-	
 	});
 
 	return (
@@ -143,19 +141,23 @@ const Storybook = () => {
 							</div>
 						</section>
 					</ParallaxLayer>
+
 					{/* <<<<<<<<<<<<< Geography >>>>>>>>> */}
 					<ParallaxLayer offset={3} speed={0.3} factor={1}>
 						<Geogrophy />
 					</ParallaxLayer>
+
+					{/* <<<<<<<<<<<<< Biker >>>>>>>>> */}
 					<ParallaxLayer
-						offset={3.9}
-						speed={1.8}
+						offset={4.9}
+						speed={-1.1}
 						factor={1}
 						horizontal={true}
 						style={{ zIndex: 10 }}
 					>
 						<Biker />
 					</ParallaxLayer>
+
 					{/* <<<<<<<<<< TV >>>>>>>>> */}
 					<ParallaxLayer offset={4} speed={0.3} factor={1}>
 						<TV />
@@ -165,18 +167,22 @@ const Storybook = () => {
 					<ParallaxLayer offset={4} speed={0.3} factor={1}>
 						<Education />
 					</ParallaxLayer>
+
 					{/* <<<<<<<<<< Banner  >>>>>>>>> */}
 					<ParallaxLayer offset={5} speed={0.3} factor={0.5}>
 						<Banner />
 					</ParallaxLayer>
+			
 					{/* <<<<<<<<<< Professional >>>>>>>>> */}
 					<ParallaxLayer offset={5} speed={0.3} factor={0.5}>
 						<Professional />
 					</ParallaxLayer>
+
 					{/* <<<<<<<<<< Today >>>>>>>>> */}
 					<ParallaxLayer offset={6} speed={0.3} factor={0.5}>
 						<Today />
 					</ParallaxLayer>
+
 					{/* <<<<<<<<<< Projects >>>>>>>>> */}
 					<ParallaxLayer offset={7.4} speed={0.3} factor={0.5}>
 						<TV2 />
@@ -203,12 +209,12 @@ const Biker = () => {
 	return (
 		<div className="biker">
 			<img
-				src={`${process.env.PUBLIC_URL}/marta.png`}
+				src={`${process.env.PUBLIC_URL}/biker.png`}
 				alt=""
 				style={{
-					height: "16rem",
+					height: "7rem",
 
-					transform: "translateY(-120vh) translateX(-40vw)",
+					transform: "translateY(482vh) translateX(-939vw)",
 				}}
 			/>
 		</div>
