@@ -117,19 +117,35 @@ html,
 	max-width: 400px;
 }
 
-			
 .polariod::after {
-	content: "";
+	content: "Lorem ipsum dolor";
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	background-color: white;
+	border-right: 10px solid white;
 	width: 100%;
-	height: 100px;
+	height: 110px;
+	font-size: 3rem;
+	font-family: --var(--audio-font);
+}
+.polariod::before {
+	content: "24";
+	position: absolute;
+	bottom: 0;
+	left: -4px;
+	background-color: white;
+	width: 70%;
+	height: 200px;
+	border-radius: 14px;
+	font-size: 2rem;
+	padding-left: 1rem;
+	margin-top: 2rem;
+	font-family: --var(--audio-font);
 }
 
 .storyaParagraph {
-	font-size: 1.0rem;
+	font-size: 1rem;
 	line-height: 1.5;
 	margin-bottom: 1rem;
 }

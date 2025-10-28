@@ -128,7 +128,7 @@ const Storybook = () => {
 					</ParallaxLayer>
 
 					{/* <<<<<<<<<<<<< Geography >>>>>>>>> */}
-					<ParallaxLayer offset={2.5} speed={0.5} factor={0.5}>
+					<ParallaxLayer offset={2.7} speed={0.5} factor={0.5}>
 						<section className="scene geography-scene center">
 							<div className="chapter">
 								<hr />
@@ -169,12 +169,24 @@ const Polariod = () => {
 		<div
 			style={{
 				width: "100%",
-				height: "65vh",
+				height: "75vh",
 				border: "10px solid white",
 				transform: "translateY(10vh) translateX(0vw)",
+				
 			}}
 			className="polariod"
-		></div>
+		>
+			<video
+				src={`${process.env.PUBLIC_URL}/soapCar.mp4`}
+				alt=""
+				style={{ height: "100%", zIndex: 0 }}
+				objectFit="cover"
+				autoPlay
+				loop
+				muted
+				
+			/>
+		</div>
 	);
 };
 
