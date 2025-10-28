@@ -121,7 +121,7 @@ const Storybook = () => {
 
 					{/* <<<<<<<<<<< Polariod >>>>>>>>> */}
 					<ParallaxLayer
-						offset={2}
+						offset={2.2}
 						speed={0.5}
 						factor={1}
 						style={{ zIndex: 1 }}
@@ -130,7 +130,7 @@ const Storybook = () => {
 					</ParallaxLayer>
 
 					{/* <<<<<<<<<<<<< Geography >>>>>>>>> */}
-					<ParallaxLayer offset={2.7} speed={0.5} factor={0.5}>
+					<ParallaxLayer offset={2.8} speed={0.5} factor={0.5}>
 						<section className="scene geography-scene center">
 							<div className="chapter">
 								<hr />
@@ -214,7 +214,7 @@ const Biker = () => {
 				style={{
 					height: "7rem",
 
-					transform: "translateY(482vh) translateX(-939vw)",
+					transform: "translateY(475vh) translateX(-922vw)",
 				}}
 			/>
 		</div>

@@ -37,6 +37,22 @@ export default function About() {
 				Institute of Technology, with a focus on the MERN stack. Lorem ipsum
 				dolor sit, amet consectetur adipisicing elit.
 			</p>
+			<br />
+			<div
+				className="center"
+				style={{
+					width: "auto",
+					height: "10vh",
+					paddingBottom: "2rem",
+					marginBlock: "2rem",
+				}}
+			>
+				<img
+					src={`${process.env.PUBLIC_URL}/homeworkHelper.png`}
+					alt=""
+					style={{ width: "65vw", height: "auto" }}
+				/>
+			</div>
 			<p className="storyaParagraph">
 				<div
 					className="right-container"
