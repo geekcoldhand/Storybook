@@ -12,7 +12,8 @@ export default function Hero() {
 
 				<div className="name-container">
 					<h1 className="hero-title permanent">
-						Hi, my name is <span className="hero-name audioFont">Horatious</span>
+						Hi, my name is{" "}
+						<span className="hero-name audioFont">Horatious</span>
 					</h1>
 				</div>
 			</div>

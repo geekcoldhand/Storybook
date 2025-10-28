@@ -128,12 +128,15 @@ const Storybook = () => {
 					</ParallaxLayer>
 
 					{/* <<<<<<<<<<<<< Geography >>>>>>>>> */}
-					<ParallaxLayer offset={2} speed={0.5} factor={0.5}>
+					<ParallaxLayer offset={2.1} speed={0.5} factor={0.5}>
 						<section className="scene geography-scene center">
-							<h2 className="permanent xxxl">Early Life</h2>
-							<div className="globe-emoji macro">🌎</div>
-
-							<p> im from Alpharetta, Georgia</p>
+							<div className="chapter">
+								<hr />
+								<h2 className="audioFont xxxl">
+									Lorem ipsum dolor sit, amet consectetur
+								</h2>
+								<hr />
+							</div>
 						</section>
 					</ParallaxLayer>
 					{/* <<<<<<<<<<<<< Geography >>>>>>>>> */}
@@ -166,15 +169,12 @@ const Polariod = () => {
 		<div
 			style={{
 				width: "100%",
-				height: "50vh",
+				height: "65vh",
 				border: "10px solid white",
 				transform: "translateY(-20vh) translateX(0vw)",
-
 			}}
 			className="polariod"
-		>
-			
-		</div>
+		></div>
 	);
 };
 
