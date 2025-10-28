@@ -36,6 +36,34 @@ const Storybook = () => {
 				});
 			},
 		});
+
+		//fade in on scroll
+		// 	const tl = gsap.timeline({
+		//   scrollTrigger: {
+		//     trigger: section,
+		//     start: 'top 60%',
+		//     end: 'bottom 40%',
+		//     toggleActions: 'play none none reverse',
+		//     scrub: 2,
+		//   }
+		// });
+
+		// tl.from(titleRef.current, {
+		//   opacity: 0,
+		//   y: 50,
+		//   duration: 1
+		// })
+		// .from(storyRef.current, {
+		//   opacity: 0,
+		//   y: 30,
+		//   duration: 1
+		// }, '-=0.5')
+		// .from(imagesRef.current, {
+		//   opacity: 0,
+		//   scale: 0.8,
+		//   stagger: 0.2,
+		//   duration: 1
+		// }, '-=0.5');
 	});
 
 	return (
@@ -143,6 +171,20 @@ const Storybook = () => {
 					<ParallaxLayer offset={3} speed={0.3} factor={1}>
 						<Geogrophy />
 					</ParallaxLayer>
+					<ParallaxLayer
+						offset={3.9}
+						speed={1.8}
+						factor={1}
+						horizontal={true}
+						style={{ zIndex: 10 }}
+					>
+						<Biker />
+					</ParallaxLayer>
+
+					<ParallaxLayer offset={4} speed={0.3} factor={1}>
+						<TV />
+					</ParallaxLayer>
+
 					{/* <<<<<<<<<< Education >>>>>>>>> */}
 					<ParallaxLayer offset={4} speed={0.3} factor={1}>
 						<Education />
@@ -164,6 +206,40 @@ const Storybook = () => {
 	);
 };
 
+const Biker = () => {
+	return (
+		<div className="biker">			
+			<img
+				src={`${process.env.PUBLIC_URL}/biker.png`}
+				alt=""
+				style={{height: "16rem" ,width: "16rem", transform: "translateY(-40vh) translateX(20vw)" }}
+			/>
+		</div>)
+}
+
+const TV = () => {
+	return (
+		<div className="tv">
+			<img
+				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
+				alt=""
+				style={{position: "relative",height: "6rem" ,width: "6rem", transform: "translateY(-70vh)" }}
+			/>
+			<hr />
+			<img
+				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
+				alt=""
+				style={{position: "relative",height: "6rem" ,width: "6rem", transform: "translateY(-70vh)" }}
+			/>
+			<hr />
+			<img
+				src={`${process.env.PUBLIC_URL}/geekwashere.png`}
+				alt=""
+				style={{position: "relative",height: "6rem" ,width: "6rem", transform: "translateY(-70vh)" }}
+			/>
+		</div>
+	);
+};
 const Polariod = () => {
 	return (
 		<div
@@ -172,19 +248,16 @@ const Polariod = () => {
 				height: "75vh",
 				border: "10px solid white",
 				transform: "translateY(10vh) translateX(0vw)",
-				
+				maxWidth: "800px",
 			}}
 			className="polariod"
 		>
-			<video
-				src={`${process.env.PUBLIC_URL}/soapCar.mp4`}
+			<img
+				src={`${process.env.PUBLIC_URL}/soapbox.gif`}
 				alt=""
 				style={{ height: "100%", zIndex: 0 }}
 				objectFit="cover"
-				autoPlay
-				loop
-				muted
-				
+			
 			/>
 		</div>
 	);
