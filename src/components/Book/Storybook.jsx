@@ -90,14 +90,26 @@ const Storybook = () => {
 					</ParallaxLayer>
 
 					{/* Train Animaiton */}
-					<ParallaxLayer offset={.9} speed={-1.8} factor={1} horizontal={true} style={{zIndex: 10}}>
+					<ParallaxLayer
+						offset={0.9}
+						speed={-1.8}
+						factor={1}
+						horizontal={true}
+						style={{ zIndex: 10 }}
+					>
 						<Train />
 					</ParallaxLayer>
 
 					{/* {City} */}
-					<ParallaxLayer offset={.9} speed={0} factor={1}>
+					<ParallaxLayer
+						offset={0.9}
+						speed={0.1}
+						factor={1}
+						style={{ zIndex: 1 }}
+					>
 						<City />
 					</ParallaxLayer>
+
 
 					<ParallaxLayer offset={1} speed={0.5} factor={1}>
 						<About />
@@ -136,17 +148,39 @@ const Storybook = () => {
 	);
 };
 const City = () => {
-return (
-	<img
-		src={`${process.env.PUBLIC_URL}/buckhead.png`}
-		alt=""
-		style={{
-			height: "10rem",
-			transform: "translateY(-10vh) translateX(-10vw)",
-		}}
-	/>
-)
-}
+	return (
+		<>
+			<img
+				src={`${process.env.PUBLIC_URL}/buckhead.png`}
+				alt=""
+				style={{
+					height: "10rem",
+					transform: "translateY(-10vh) translateX(-10vw)",
+				}}
+			/>
+			<img
+				src={`${process.env.PUBLIC_URL}/railway.png`}
+				alt=""
+				style={{
+					height: "2rem",
+					transform: "translateY(-18vh) translateX(-44vw)"
+				}}
+			/>
+			;
+		</>
+	);
+};
+const Railwaay = () => {
+	return (
+		<img
+			src={`${process.env.PUBLIC_URL}/railway.png`}
+			alt=""
+			style={{
+				height: "2rem",
+			}}
+		/>
+	);
+};
 const Train = () => {
 	return (
 		<img
@@ -154,7 +188,7 @@ const Train = () => {
 			alt=""
 			style={{
 				height: "4rem",
-				transform: "translateY(100vh) translateX(-530vw)",
+				transform: "translateY(95vh) translateX(-480vw)",
 			}}
 		/>
 	);
