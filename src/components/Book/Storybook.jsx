@@ -90,7 +90,7 @@ const Storybook = () => {
 					</ParallaxLayer>
 
 					{/* Train Animaiton */}
-					<ParallaxLayer offset={.9} speed={-1.8} factor={1} horizontal={true}>
+					<ParallaxLayer offset={.9} speed={-1.8} factor={1} horizontal={true} style={{zIndex: 10}}>
 						<Train />
 					</ParallaxLayer>
 
@@ -138,11 +138,11 @@ const Storybook = () => {
 const City = () => {
 return (
 	<img
-		src={`${process.env.PUBLIC_URL}/atlanta.png`}
+		src={`${process.env.PUBLIC_URL}/buckhead.png`}
 		alt=""
 		style={{
-			height: "20rem",
-			transform: "translateY(100vh) translateX(0vw)",
+			height: "10rem",
+			transform: "translateY(-10vh) translateX(-10vw)",
 		}}
 	/>
 )
